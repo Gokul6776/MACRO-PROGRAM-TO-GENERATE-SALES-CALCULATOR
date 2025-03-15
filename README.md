@@ -1,1 +1,2 @@
-# MACRO-PROGRAM-TO-GENERATE-SALES-CALCULATOR
+# MACRO-PROGRAM-TO-GENERATE-SALES-CALCULATON
+Sub CalculateTotalSales() Dim employee As String, total As Double, sheet As Worksheet, i AsInteger total = 0employee = InputBox("Enter the employee name (case sensitive)")For Each sheet In WorksheetsFor i = 2 To 13 If sheet.Cells(i, 2).Value = employee Thentotal = total + sheet.Cells(i, 3).ValueEnd If Next iNext sheet MsgBox "Total sales of " & employee & " is " & totalEnd Sub
